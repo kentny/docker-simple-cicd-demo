@@ -1,0 +1,13 @@
+{
+    "name": "web-container",
+    "service": "web",
+    "workspaceFolder": "/workspace",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "customizations": {
+        "vscode":{
+            "extensions":[
+                "firsttris.vscode-jest-runner"
+            ]
+        }
+    }
+}
