@@ -2,7 +2,9 @@ version: '3.9'
 services:
   api:
     container_name: api
-    build: ./api
+    build: 
+      context: ./api
+      target: base
     ports:
       - 8080:8080
     tty: true
@@ -11,7 +13,9 @@ services:
 
   web:
     container_name: web
-    build: ./web
+    build: 
+      context: ./web
+      target: base
     ports:
       - 3000:3000
     environment:
