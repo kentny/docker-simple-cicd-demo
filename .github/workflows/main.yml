@@ -3,7 +3,7 @@ name: Deploy Simple CI/CD
 
 on:
   push:
-    branches: ["main", "maintenance"]
+    branches: ["main"]
 
 env:
   AWS_REGION: us-west-2
